@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{374A60F5-D0AA-4A72-A361-A133C85FD29A}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HandiMaps_B.Droid</RootNamespace>
+    <AssemblyName>HandiMaps_B.Droid</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.3.0\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\packages\SkiaSharp.1.59.1\lib\MonoAndroid\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Android">
+      <HintPath>..\packages\SkiaSharp.Views.1.59.1\lib\MonoAndroid\SkiaSharp.Views.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Forms">
+      <HintPath>..\packages\SkiaSharp.Views.Forms.1.59.1\lib\MonoAndroid\SkiaSharp.Views.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="C5">
+      <HintPath>..\packages\C5.2.4.5947.17249\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="EpPathFinding.cs">
+      <HintPath>..\packages\EpPathFinding.cs.1.3.4\lib\EpPathFinding.cs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HandiMaps_B\HandiMaps_B.csproj">
+      <Project>{5DF460C2-B8D5-46E5-8568-829BBD97E9DD}</Project>
+      <Name>HandiMaps_B</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\wSearch1.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\wSearch1.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\wSearch1.png" />
+    <AndroidResource Include="Resources\drawable\.DS_Store" />
+    <AndroidResource Include="Resources\drawable\floorIcon.png" />
+    <AndroidResource Include="Resources\drawable\homeIcon2.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Concessions.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Current.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Destination.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Elevator.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EmergencyPhone.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EntryE.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EntryN.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EntryNE.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EntryNW.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EntryS.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EntrySE.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EntrySW.png" />
+    <AndroidResource Include="Resources\drawable\Icon_EntryW.png" />
+    <AndroidResource Include="Resources\drawable\Icon_FirstAid.png" />
+    <AndroidResource Include="Resources\drawable\Icon_GiftShop.png" />
+    <AndroidResource Include="Resources\drawable\Icon_InfoConciergecopy.png" />
+    <AndroidResource Include="Resources\drawable\Icon_InfoConcierge.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Location.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Navagation.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Parking.png" />
+    <AndroidResource Include="Resources\drawable\Icon_PinB.png" />
+    <AndroidResource Include="Resources\drawable\Icon_PinO.png" />
+    <AndroidResource Include="Resources\drawable\Icon_RestroomMen.png" />
+    <AndroidResource Include="Resources\drawable\Icon_RestroomUnisex.png" />
+    <AndroidResource Include="Resources\drawable\Icon_RestroomWomen.png" />
+    <AndroidResource Include="Resources\drawable\Icon_SearchB.png" />
+    <AndroidResource Include="Resources\drawable\Icon_Search.png" />
+    <AndroidResource Include="Resources\drawable\Icon_TicketsWillCall.png" />
+    <AndroidResource Include="Resources\drawable\show1.png" />
+    <AndroidResource Include="Resources\drawable\show1H.png" />
+    <AndroidResource Include="Resources\drawable\show2.png" />
+    <AndroidResource Include="Resources\drawable\show2H.png" />
+    <AndroidResource Include="Resources\drawable\Showare_Map_1.png" />
+    <AndroidResource Include="Resources\drawable\Showare_Map_1H.png" />
+    <AndroidResource Include="Resources\drawable\Showare_Map_2.png" />
+    <AndroidResource Include="Resources\drawable\Showare_Map_2H.png" />
+    <AndroidResource Include="Resources\drawable\showO.png" />
+    <AndroidResource Include="Resources\drawable\showOH.png" />
+    <AndroidResource Include="Resources\drawable\xIcon.png" />
+    <AndroidResource Include="Resources\drawable\hmIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\New Folder\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

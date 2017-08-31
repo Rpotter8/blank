@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{ADE50632-7876-45F4-8A74-C1E9F2DFC595}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/packages.config">
+    <Files>
+      <File FileName="iOS/EstimoteSDK_ApiDefinitions.cs" Line="4" Column="19" />
+      <File FileName="iOS/EstimoteSDK_StructsAndEnums.cs" Line="1" Column="1" />
+      <File FileName="iOS/Info.plist" />
+      <File FileName="iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="iOS/packages.config" Line="9" Column="90" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HandiMaps__B.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.HandiMaps__B.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FC8F73C7-C55F-47EF-A524-DF5BD24C2144" />
+  <MultiItemStartupConfigurations />
+</Properties>

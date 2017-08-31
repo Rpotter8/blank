@@ -1,0 +1,1 @@
+/Users/Ryan/Projects/patrickstevens24/Handimaps_Xamarin.git/Droid/obj/Release/HandiMaps_B.Droid.csprojResolveAssemblyReference.cache

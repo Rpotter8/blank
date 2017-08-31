@@ -1,0 +1,76 @@
+objc[9545]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x1235d2ca8) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/AVConference.framework/AVConference (0x123504cd0). One of the two will be used. Which one is undefined.
+objc[9545]: Class PLBuildVersion is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices (0x121257cc0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices (0x12106e6f0). One of the two will be used. Which one is undefined.
+2017-08-10 13:44:48.867 HandiMaps_B.iOS[9545:1210385] 
+Unhandled Exception:
+System.NullReferenceException: Object reference not set to an instance of an object
+  at HandiMaps_B.Routing..ctor (EpPathFinding.cs.GridPos theCurrent, EpPathFinding.cs.GridPos theDestination, EpPathFinding.cs.BaseGrid theGrid) [0x00014] in <4e694c97d46b48a1a9180890d45960b9>:0 
+  at HandiMaps_B.MapView.OnCanvasViewPaintSurface (System.Object sender, SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs args) [0x00024] in <4e694c97d46b48a1a9180890d45960b9>:0 
+  at HandiMaps_B.MapView.<SetupRouting>b__27_0 (System.Object sender, SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs args) [0x00000] in <4e694c97d46b48a1a9180890d45960b9>:0 
+  at SkiaSharp.Views.Forms.SKCanvasView.OnPaintSurface (SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs e) [0x0000a] in <ff95c984bdaf4ba0a110730621935888>:0 
+  at SkiaSharp.Views.Forms.SKCanvasView.SkiaSharp.Views.Forms.ISKCanvasViewController.OnPaintSurface (SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs e) [0x00000] in <ff95c984bdaf4ba0a110730621935888>:0 
+  at SkiaSharp.Views.Forms.SKCanvasViewRendererBase`2[TFormsView,TNativeView].OnPaintSurface (System.Object sender, SkiaSharp.Views.iOS.SKPaintSurfaceEventArgs e) [0x00021] in <ff95c984bdaf4ba0a110730621935888>:0 
+  at SkiaSharp.Views.iOS.SKCanvasView.DrawInSurface (SkiaSharp.SKSurface surface, SkiaSharp.SKImageInfo info) [0x00013] in <242a6555adef4d5caef3919507939dc5>:0 
+  at SkiaSharp.Views.iOS.SKCanvasView.Draw (CoreGraphics.CGRect rect) [0x00048] in <242a6555adef4d5caef3919507939dc5>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at HandiMaps_B.iOS.Application.Main (System.String[] args) [0x00000] in <dd747016a4a442ad850e552a70b65771>:0 
+2017-08-10 13:44:48.869 HandiMaps_B.iOS[9545:1210385] Unhandled managed exception:
+Object reference not set to an instance of an object (System.NullReferenceException)
+  at HandiMaps_B.Routing..ctor (EpPathFinding.cs.GridPos theCurrent, EpPathFinding.cs.GridPos theDestination, EpPathFinding.cs.BaseGrid theGrid) [0x00014] in <4e694c97d46b48a1a9180890d45960b9>:0 
+  at HandiMaps_B.MapView.OnCanvasViewPaintSurface (System.Object sender, SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs args) [0x00024] in <4e694c97d46b48a1a9180890d45960b9>:0 
+  at HandiMaps_B.MapView.<SetupRouting>b__27_0 (System.Object sender, SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs args) [0x00000] in <4e694c97d46b48a1a9180890d45960b9>:0 
+  at SkiaSharp.Views.Forms.SKCanvasView.OnPaintSurface (SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs e) [0x0000a] in <ff95c984bdaf4ba0a110730621935888>:0 
+  at SkiaSharp.Views.Forms.SKCanvasView.SkiaSharp.Views.Forms.ISKCanvasViewController.OnPaintSurface (SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs e) [0x00000] in <ff95c984bdaf4ba0a110730621935888>:0 
+  at SkiaSharp.Views.Forms.SKCanvasViewRendererBase`2[TFormsView,TNativeView].OnPaintSurface (System.Object sender, SkiaSharp.Views.iOS.SKPaintSurfaceEventArgs e) [0x00021] in <ff95c984bdaf4ba0a110730621935888>:0 
+  at SkiaSharp.Views.iOS.SKCanvasView.DrawInSurface (SkiaSharp.SKSurface surface, SkiaSharp.SKImageInfo info) [0x00013] in <242a6555adef4d5caef3919507939dc5>:0 
+  at SkiaSharp.Views.iOS.SKCanvasView.Draw (CoreGraphics.CGRect rect) [0x00048] in <242a6555adef4d5caef3919507939dc5>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in <58a9bd8a3cbb4d0092bc0a767ff66c0f>:0 
+  at HandiMaps_B.iOS.Application.Main (System.String[] args) [0x00000] in <dd747016a4a442ad850e552a70b65771>:0 
+2017-08-10 13:44:48.869 HandiMaps_B.iOS[9545:1210385] critical: Stacktrace:
+
+2017-08-10 13:44:48.869 HandiMaps_B.iOS[9545:1210385] critical: 
+Native stacktrace:
+
+2017-08-10 13:44:48.907 HandiMaps_B.iOS[9545:1210385] critical: 	0   HandiMaps_B.iOS                     0x0000000109f33c01 mono_handle_native_crash + 257
+2017-08-10 13:44:48.907 HandiMaps_B.iOS[9545:1210385] critical: 	1   libsystem_platform.dylib            0x000000011709cb3a _sigtramp + 26
+2017-08-10 13:44:48.908 HandiMaps_B.iOS[9545:1210385] critical: 	2   ???                                 0x000000010a4410e0 0x0 + 4467200224
+2017-08-10 13:44:48.908 HandiMaps_B.iOS[9545:1210385] critical: 	3   libsystem_c.dylib                   0x0000000116e0b88f abort + 127
+2017-08-10 13:44:48.908 HandiMaps_B.iOS[9545:1210385] critical: 	4   HandiMaps_B.iOS                     0x000000010a0caaa2 xamarin_unhandled_exception_handler + 34
+2017-08-10 13:44:48.908 HandiMaps_B.iOS[9545:1210385] critical: 	5   HandiMaps_B.iOS                     0x0000000109f93ee4 mono_invoke_unhandled_exception_hook + 148
+2017-08-10 13:44:48.908 HandiMaps_B.iOS[9545:1210385] critical: 	6   HandiMaps_B.iOS                     0x0000000109f33961 mono_handle_exception_internal + 4913
+2017-08-10 13:44:48.909 HandiMaps_B.iOS[9545:1210385] critical: 	7   HandiMaps_B.iOS                     0x0000000109f32628 mono_handle_exception + 24
+2017-08-10 13:44:48.909 HandiMaps_B.iOS[9545:1210385] critical: 	8   HandiMaps_B.iOS                     0x0000000109eb652f mono_amd64_throw_exception + 143
+2017-08-10 13:44:48.909 HandiMaps_B.iOS[9545:1210385] critical: 	9   ???                                 0x0000000128fdfae7 0x0 + 4982700775
+2017-08-10 13:44:48.909 HandiMaps_B.iOS[9545:1210385] critical: 	10  HandiMaps_B.iOS                     0x000000010a0cddcb xamarin_invoke_trampoline + 3067
+2017-08-10 13:44:48.909 HandiMaps_B.iOS[9545:1210385] critical: 	11  HandiMaps_B.iOS                     0x000000010a0cf92e xamarin_arch_trampoline + 78
+2017-08-10 13:44:48.909 HandiMaps_B.iOS[9545:1210385] critical: 	12  HandiMaps_B.iOS                     0x000000010a0d0586 xamarin_x86_64_common_trampoline + 110
+2017-08-10 13:44:48.910 HandiMaps_B.iOS[9545:1210385] critical: 	13  UIKit                               0x000000010b300d45 -[UIView(CALayerDelegate) drawLayer:inContext:] + 489
+2017-08-10 13:44:48.910 HandiMaps_B.iOS[9545:1210385] critical: 	14  QuartzCore                          0x0000000110637500 -[CALayer drawInContext:] + 257
+2017-08-10 13:44:48.910 HandiMaps_B.iOS[9545:1210385] critical: 	15  QuartzCore                          0x000000011054dae5 CABackingStoreUpdate_ + 2505
+2017-08-10 13:44:48.910 HandiMaps_B.iOS[9545:1210385] critical: 	16  QuartzCore                          0x00000001106370fa ___ZN2CA5Layer8display_Ev_block_invoke + 61
+2017-08-10 13:44:48.910 HandiMaps_B.iOS[9545:1210385] critical: 	17  QuartzCore                          0x0000000110636df3 _ZN2CA5Layer8display_Ev + 1633
+2017-08-10 13:44:48.910 HandiMaps_B.iOS[9545:1210385] critical: 	18  QuartzCore                          0x000000011062b31d _ZN2CA5Layer17display_if_neededEPNS_11TransactionE + 315
+2017-08-10 13:44:48.910 HandiMaps_B.iOS[9545:1210385] critical: 	19  QuartzCore                          0x000000011062b3ab _ZN2CA5Layer28layout_and_display_if_neededEPNS_11TransactionE + 35
+2017-08-10 13:44:48.910 HandiMaps_B.iOS[9545:1210385] critical: 	20  QuartzCore                          0x00000001105bae92 _ZN2CA7Context18commit_transactionEPNS_11TransactionE + 294
+2017-08-10 13:44:48.911 HandiMaps_B.iOS[9545:1210385] critical: 	21  QuartzCore                          0x00000001105e7130 _ZN2CA11Transaction6commitEv + 468
+2017-08-10 13:44:48.911 HandiMaps_B.iOS[9545:1210385] critical: 	22  QuartzCore                          0x00000001105e7b37 _ZN2CA11Transaction17observer_callbackEP19__CFRunLoopObservermPv + 115
+2017-08-10 13:44:48.911 HandiMaps_B.iOS[9545:1210385] critical: 	23  CoreFoundation                      0x0000000115974717 __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__ + 23
+2017-08-10 13:44:48.911 HandiMaps_B.iOS[9545:1210385] critical: 	24  CoreFoundation                      0x0000000115974687 __CFRunLoopDoObservers + 391
+2017-08-10 13:44:48.911 HandiMaps_B.iOS[9545:1210385] critical: 	25  CoreFoundation                      0x0000000115959720 __CFRunLoopRun + 1200
+2017-08-10 13:44:48.911 HandiMaps_B.iOS[9545:1210385] critical: 	26  CoreFoundation                      0x0000000115959016 CFRunLoopRunSpecific + 406
+2017-08-10 13:44:48.911 HandiMaps_B.iOS[9545:1210385] critical: 	27  GraphicsServices                    0x00000001165daa24 GSEventRunModal + 62
+2017-08-10 13:44:48.911 HandiMaps_B.iOS[9545:1210385] critical: 	28  UIKit                               0x000000010b23e134 UIApplicationMain + 159
+2017-08-10 13:44:48.912 HandiMaps_B.iOS[9545:1210385] critical: 	29  ???                                 0x000000012b359205 0x0 + 5019898373
+2017-08-10 13:44:48.912 HandiMaps_B.iOS[9545:1210385] critical: 	30  ???                                 0x000000012b359070 0x0 + 5019897968
+2017-08-10 13:44:48.912 HandiMaps_B.iOS[9545:1210385] critical: 
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+

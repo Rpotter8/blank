@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:HandiMaps_B" x:Class="HandiMaps_B.HandiMaps_BPage" BackgroundColor = "#5289C5">
+        <ContentPage.Content>
+            <StackLayout  Padding = "70" >
+                <Image Source="hmIcon" WidthRequest = "220" />
+            <StackLayout  Padding = "20" Spacing = "20" >
+                <Button Text="ShoWare Center" WidthRequest="200" HeightRequest = "50" Font = "20"
+                HorizontalOptions="Center" TextColor= "#5289C5" 
+                BackgroundColor = "White" Clicked="OnShowClicked">> </Button>
+                <Button Text="UWT YMCA" WidthRequest="200"  HeightRequest = "50" Font = "20"
+                HorizontalOptions="Center" TextColor= "#5289C5" 
+                BackgroundColor = "White" Clicked="OnUwtClicked">></Button>
+                <Button Text="Logan Field" WidthRequest="200"  HeightRequest = "50" Font = "20"
+                HorizontalOptions="Center" TextColor= "#5289C5" 
+                BackgroundColor = "White" Clicked="OnLoganClicked"></Button>
+                  </StackLayout>
+           </StackLayout>
+        </ContentPage.Content>
+</ContentPage>
